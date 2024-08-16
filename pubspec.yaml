@@ -29,6 +29,7 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   animate_do: ^3.3.4
+  auto_size_text: ^3.0.0
   bloc: ^8.1.4
   cupertino_icons: ^1.0.6
   dartz: ^0.10.1
@@ -73,7 +74,6 @@ flutter:
         # - asset: assets/fonts/Axiforma-Bold.ttf
         # # - asset: assets/fonts/Axiforma-ExtraBold.ttf
         # # - asset: assets/fonts/Axiforma-Regular.ttf
-
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

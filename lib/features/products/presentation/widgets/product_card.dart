@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:prueba_tecnica/core/theme.dart';
 import 'package:prueba_tecnica/features/products/domain/entities/product.dart';
@@ -42,12 +43,13 @@ class ProductCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
 
-                Text(
+                AutoSizeText(
                   product.name,
                   style: Theme.of(context).textTheme.titleLarge,
+                  maxLines: 3,
                 ),
 
-                Text(
+                AutoSizeText(
                   product.weight,
                   style: Theme.of(context).textTheme.labelLarge?.copyWith(
                     color: GreenAppleColors.labelHintTextColor,
@@ -57,7 +59,7 @@ class ProductCard extends StatelessWidget {
                   textAlign: TextAlign.start,
                 ),
 
-                Text(
+                AutoSizeText(
                   product.brand,
                   style: Theme.of(context).textTheme.labelLarge?.copyWith(
                     color: GreenAppleColors.labelBrandColor,
